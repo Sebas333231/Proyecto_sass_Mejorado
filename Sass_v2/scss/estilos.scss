@@ -1,0 +1,70 @@
+
+
+$principal: rgb(64, 129, 69);
+
+$primary: $principal;
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+.btn-primary {
+    border-bottom: 3px solid rgba(10, 9, 9, 0.9);
+}
+
+.custom-class {
+    display: none;
+}
+
+@include media-breakpoint-up(xs) {
+    .custom-class {
+        display: block;
+        background-image: url(/img/leandro.jpg);
+        background-size: cover;
+        background-position: center center;
+        display: block;
+        max-width: 88%;
+        height: 300px;
+        color: white;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class {
+        display: block;
+        display: block;
+        background-image: url(/img/balon.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class {
+        display: block;
+        background-image: url(/img/ney.jpg.crdownload);
+        background-size: cover;
+        background-position: center center;
+        display: block;
+        max-width: 88%; 
+        height: 200px;
+        color: white;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class {
+        display: block;
+        background-image: url(/img/leo.jpg);
+        background-size: cover;
+        background-position: center center;
+        display: block;
+        max-width: 88%; 
+        height: 450px;
+        color: white;
+    }
+}
